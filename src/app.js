@@ -8,11 +8,8 @@ class App {
         this.routes();
     }
 
-    middlewares() {
-        this.server.use(express.json());
-    }
-
     routes() {
+        this.server.use(express.json());
         this.server.use(routes);
     }
 }
